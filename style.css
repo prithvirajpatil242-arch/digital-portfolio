@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+}
+
+.logo{
+    color:#38bdf8;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:500px;
+    animation:fadeIn 1.5s ease-in;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text h3{
+    margin:10px 0;
+}
+
+.hero-text p{
+    margin:15px 0;
+}
+
+button{
+    padding:10px 20px;
+    background:#38bdf8;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+button:hover{
+    background:#0ea5e9;
+}
+
+.secondary-btn{
+    background:#1e293b;
+}
+
+.secondary-btn:hover{
+    background:#334155;
+}
+
+.hero-image img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+}
+
+.about, .contact{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.skills{
+    padding:60px 8%;
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill-box{
+    background:#1e293b;
+    padding:15px 30px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-5px);
+}
+
+.projects{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:20px;
+    margin:20px auto;
+    max-width:500px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.coming{
+    color:#38bdf8;
+    margin-top:10px;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    margin-top:20px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
